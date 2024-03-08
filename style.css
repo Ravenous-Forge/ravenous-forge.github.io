@@ -6,7 +6,6 @@
 
 body{
     margin: 0;
-    white-space: pre;
 }
 
 a{
@@ -36,7 +35,7 @@ a{
 }
 
 .nav-spacer{
-    padding: 42.5vh 0;
+    padding: 40vh 0;
 
     display: flex;
     justify-content: center;
@@ -58,13 +57,16 @@ a{
 .background{
     width: 100%;
     position: fixed;
-    top: 0;
+
+    left: 50%;
+    transform: translate(-50%, 0%);
 
     z-index: -1;
 }
 
 section{
-    padding: 1em 15em;
+    margin: auto;
+    padding: 1em 25%;
 
     position: relative;
 
@@ -87,16 +89,16 @@ section{
 }
 
 .team-grid{
-    padding: 1em;
+    padding: 1em 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .grid-item{
-    width: 12em;
-    height: 12em;
-    margin: 1em;
+    width: 10em;
+    height: 10em;
+    margin: 1em 0em;
     
     display: flex;
     flex-direction: column;
@@ -109,4 +111,29 @@ section{
     height: 75%;
 
     border-radius: 100em;
+}
+
+.press img{
+    width: 200px;
+    height: 200px;
+}
+
+/* For Tablets */
+@media screen and (max-width: 1024px) {
+    .background{
+        width: auto;
+        height: 100%;
+    }
+
+    section{
+        margin: auto;
+        padding: 1em 10%;
+    
+        position: relative;
+    
+        color: white;
+        background-color: var(--primary);
+    
+        z-index: 1;
+    }
 }
