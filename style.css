@@ -89,7 +89,7 @@ section{
 }
 
 .team-grid{
-    padding: 1em 0;
+    padding: 0.25em 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -97,7 +97,7 @@ section{
 
 .grid-item{
     width: 10em;
-    height: 10em;
+    height: 11em;
     margin: 1em 0em;
     
     display: flex;
@@ -111,6 +111,10 @@ section{
     height: 75%;
 
     border-radius: 100em;
+}
+
+.grid-item h4{
+    margin: 0.5em;
 }
 
 .press img{
