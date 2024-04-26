@@ -20,18 +20,32 @@ a{
     align-items: center;
     justify-content: space-between;
 
-    z-index: 2;
-}
+    padding: 0.25em 0 0 0;
 
-.nav-item{
-    padding: 0 0.5em;
+    z-index: 2;
+    background: rgb(20,76,75);
+    background: -moz-linear-gradient(180deg, rgba(20,76,75,1) 0%, rgba(20,76,75,0.5) 75%, rgba(20,76,75,0.25) 90%, rgba(20,76,75,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(20,76,75,1) 0%, rgba(20,76,75,0.5) 75%, rgba(20,76,75,0.25) 90%, rgba(20,76,75,0) 100%);
+    background: linear-gradient(180deg, rgba(20,76,75,1) 0%, rgba(20,76,75,0.5) 75%, rgba(20,76,75,0.25) 90%, rgba(20,76,75,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#144c4b",endColorstr="#144c4b",GradientType=1);
 }
 
 .nav-item-list{
-    padding: 0 1em;
-
     display: flex;
     justify-content: right;
+    align-items: flex-start;
+}
+
+.nav-item{
+    padding: 0 0.7em;
+}
+
+.nav img{
+    max-height: 3em;
+}
+
+.nav-item h3{
+    margin: 0;
 }
 
 .nav-spacer{
@@ -76,10 +90,23 @@ section{
     z-index: 1;
 }
 
+section img{
+    max-width: 40vw;
+}
+
+#play{
+    display: flex;
+    flex-direction: row;
+
+    gap: 2em;
+}
+
 .contacts{
     display: flex;
     flex-direction: row;
     gap: 3em;
+
+    text-align: center;
 }
 
 .contacts a{
@@ -107,6 +134,7 @@ section{
 }
 
 .grid-item img{
+    max-width: 100%;
     width: 75%;
     height: 75%;
 
@@ -115,11 +143,6 @@ section{
 
 .grid-item h4{
     margin: 0.5em;
-}
-
-.press img{
-    width: 200px;
-    height: 200px;
 }
 
 /* For Tablets */
