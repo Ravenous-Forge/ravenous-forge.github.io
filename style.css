@@ -95,6 +95,11 @@ section img{
     max-height: 60vh;
 }
 
+section video{
+    max-width: 50vw;
+    max-height: 60vh;
+}
+
 #play{
     display: flex;
     flex-direction: row;
